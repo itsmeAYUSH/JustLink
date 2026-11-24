@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Bookmark, Lock, ArrowRight, Menu, X } from "lucide-react";
 import { ChromeIcon, GithubIcon } from "@/components/icons";
-import { APP_LOGIN_URL } from "@/lib/config";
+import { APP_URL } from "@/lib/config";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,7 +66,7 @@ export function Navbar() {
             Live Demo
           </a>
           <a
-            href={APP_LOGIN_URL}
+            href={APP_URL}
             className="group relative inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-teal-500 to-teal-400 px-4 py-2 text-sm font-semibold text-zinc-950 shadow-[0_0_25px_-5px_rgba(45,212,191,0.4)] transition-all hover:scale-[1.02] hover:shadow-[0_0_35px_-5px_rgba(45,212,191,0.6)]"
           >
             <span>Open JustLink</span>
@@ -141,7 +141,7 @@ export function Navbar() {
               Live Demo
             </a>
             <a
-              href={APP_LOGIN_URL}
+              href={APP_URL}
               className="flex items-center justify-center gap-2 rounded-xl bg-teal-400 py-2.5 text-sm font-semibold text-zinc-950"
             >
               <span>Get Started</span>

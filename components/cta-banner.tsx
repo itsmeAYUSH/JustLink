@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { ChromeIcon } from "@/components/icons";
-import { APP_LOGIN_URL } from "@/lib/config";
+import { APP_URL } from "@/lib/config";
 
 export function CTABanner() {
   return (
@@ -20,7 +20,7 @@ export function CTABanner() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href={APP_LOGIN_URL}
+            href={APP_URL}
             className="group inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 px-7 py-4 text-base font-semibold text-zinc-950 shadow-[0_0_35px_-5px_rgba(45,212,191,0.5)] transition-all hover:scale-[1.02] hover:shadow-[0_0_45px_-5px_rgba(45,212,191,0.7)]"
           >
             <span>Open JustLink App</span>
